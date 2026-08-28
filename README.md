@@ -46,14 +46,51 @@ de dados e organização de código em PHP.
 
 
 ## Estrutura de arquivos
-...
 
-## Como executar
-...
+
+| Arquivo/Pasta | Responsabilidade |
+|----------------|-------------------|
+| `utilitarios.php` | Contém todas as funções de processamento: validação de CPF/e-mail, formatação de nomes e valores, cálculos financeiros, busca de clientes e aplicação de reajuste. |
+| `index.php` | Camada de apresentação: importa `utilitarios.php` via `require_once` e monta a tela HTML com os dados processados (listagem, busca, relatório). |
+| `testes/` | Guarda os casos de teste executados e seus resultados, servindo de evidência da qualidade do sistema. |
+| `README.md` | Documentação geral: descrição do projeto, requisitos, instruções de execução e testes. |
+
+## Como Executar
+
+### Pré-requisitos
+- Ter o PHP instalado (versão 8.0 ou superior, por causa do `strict_types` e tipos como `?array`)
+- Verificar a instalação rodando no terminal:
+```bash
+  php -v
+```
+
+### Passo a passo
+1. Baixe ou clone a pasta `projeto_crm`.
+2. Abra o terminal dentro da pasta do projeto:
+```bash
+   cd projeto_crm
+```
+3. Inicie o servidor embutido do PHP:
+```bash
+   php -S localhost:8000
+```
+4. Abra o navegador e acesse:
+```
+http://localhost:8000/index.php
+```
 
 ## Testes realizados
 (aqui entra a tabela de casos de teste, preenchida depois)
 
 ## Autores / Grupo
+
+Grupo 5
+
+
+| Nomes | funções |
+|-------|---------|
+| Caio M | Analista e Testador e documentador |
+| Caio AC | Desenvolvedor da biblioteca |
+| Felipe R | Desenvolvedor da interface |
 
 
